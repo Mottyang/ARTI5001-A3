@@ -1,0 +1,18 @@
+{
+  "text": "Hello. This is our first speech synthesis test for Assignment Three.",
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "tts_device": "cuda:0",
+  "vocoder_device": "cuda:0",
+  "python": "3.10.11",
+  "torch": "2.11.0+cu128",
+  "torchaudio": "2.11.0+cu128",
+  "speechbrain": "1.0.3",
+  "cuda": "12.8",
+  "sample_rate": 22050,
+  "duration_seconds": 5.317369614512471,
+  "inference_seconds": 0.5582100003957748,
+  "rtf": 0.10497859672426682,
+  "peak_gpu_memory_mib": 286.6669921875,
+  "output": "C:\\Users\\Admin\\Desktop\\Assignment\\5001\\a3\\wav_examples\\first_gpu_test.wav",
+  "note": "First-run functional check, not a warmed-up benchmark. Pretrained models; no fine-tuning."
+}

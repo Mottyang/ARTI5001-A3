@@ -1,0 +1,22 @@
+{
+  "group": 62,
+  "notebook": "D:\\Assignment\\5001\\a3\\submission\\62_A3\\62_A3.ipynb",
+  "code_cells_executed": 21,
+  "errors": 0,
+  "training_disabled": true,
+  "new_inference_disabled": true,
+  "preserved_checkpoints_verified": 8,
+  "notebook_bytes": 2888830,
+  "notebook_sha256": "3dc4707696e825ad4d7dad64e707902cb3c913f7bd68a36540f8038fddfb528c",
+  "portable_review_without_dataset_scripts_or_checkpoints": "PASS (external relative JSON included)",
+  "package": "D:\\Assignment\\5001\\a3\\submission\\62_A3.zip",
+  "package_bytes": 22698339,
+  "package_contents": "62_A3.ipynb + data/experiment_evidence.json + wav_examples/ (110 generated WAVs and manifest)",
+  "fine_tuned_new_inference": "Requires external preserved checkpoint directory; not embedded in ZIP",
+  "group_number": 62,
+  "evidence_relative_path": "data/experiment_evidence.json",
+  "evidence_sha256": "ffd15842045f1ad71b7d1ee368fcc16aeac6b78baae8213f518e836f208732db",
+  "evidence_bytes": 3091162,
+  "cell_5_source_characters": 422,
+  "external_json_payload_unchanged": true
+}

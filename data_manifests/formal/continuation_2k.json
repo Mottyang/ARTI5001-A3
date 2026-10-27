@@ -1,0 +1,92 @@
+{
+  "start_step": 1000,
+  "end_step": 2000,
+  "additional_updates_per_model": 1000,
+  "source_training_script_sha256": "6cb8f0e6a12a52821545fde70f7802fe9c2edba79e0eac2dee0799f8a17dd0ec",
+  "continuation_script_sha256": "82d62a11bd2094c75296c78c8b1e1521c603a6dbbed1972bf68c226e409bd131",
+  "code_change_scope": "Exactly two output-path substitutions; all training, validation, optimizer, data order and RNG restoration logic unchanged.",
+  "output_routing_changes": {
+    "directory=ROOT/'checkpoints'/c['name'];": "directory=ROOT/'checkpoints'/c['name']/'stage_2k';",
+    "logdir=ROOT/'logs'/c['name'];": "logdir=ROOT/'logs'/c['name']/'stage_2k';"
+  },
+  "config_policy": "Original config kept unchanged to restore checkpoint exactly; --steps 2000 overrides effective total budget.",
+  "same_training_settings": true,
+  "training_frontend_unchanged": true,
+  "resume_source": "Each experiment own 1k last.pt, including Adam and RNG states. best.pt seeded from its 1k best.",
+  "selection_policy": "Keep best-so-far validation checkpoint; last.pt at 2000 is the endpoint for the literal 1k-vs-2k comparison. Best-so-far may be earlier than 2000.",
+  "evaluation_policy": "Same 10 fixed validation references and same 10 custom prompts; numeric/money repair enabled; optional dotted expansion disabled.",
+  "preserved_1k_files": [
+    {
+      "path": "checkpoints\\expA\\last.pt",
+      "sha256": "e1fb21d01b489a075a98247acd482e9fca82522748d3aa2c0b76a55df9cd3082"
+    },
+    {
+      "path": "checkpoints\\expA\\best.pt",
+      "sha256": "e1fb21d01b489a075a98247acd482e9fca82522748d3aa2c0b76a55df9cd3082"
+    },
+    {
+      "path": "logs\\expA\\completion_audit.json",
+      "sha256": "159f75ab62bc8a06772bc925ccd7814eb016b61d8c0cf2258f74312dbba95bcd"
+    },
+    {
+      "path": "logs\\expA\\completion_audit_console.log",
+      "sha256": "d23bbaedf79c9b5b3ff7b6d01aef67bc01d660d7a7eb0ccf7d498f17636bd7e2"
+    },
+    {
+      "path": "logs\\expA\\config.json",
+      "sha256": "5171bc4dfc969110266d58068a4a2cc5131e90fd47af35de270236fd3b7d0fc3"
+    },
+    {
+      "path": "logs\\expA\\console.log",
+      "sha256": "58e37cc5a23806b41b0b4950461ba2040c2f9a12ce1218ca6d9c8ae781b2fc15"
+    },
+    {
+      "path": "logs\\expA\\metrics.csv",
+      "sha256": "0bca5dd189ef4aac25dc49e6ad43f31f6149131baf87ab2b14add5e62eae068a"
+    },
+    {
+      "path": "logs\\expA\\RESULTS.md",
+      "sha256": "86944575af12969845cc6c586932822588ed1151110bfe73c6f99e92484808de"
+    },
+    {
+      "path": "logs\\expA\\training_report.json",
+      "sha256": "760be5cc8c0856c0ba12e717f245f4a8c941bd4eb459f0b739fa4ecc3bc7f8d0"
+    },
+    {
+      "path": "checkpoints\\expB\\last.pt",
+      "sha256": "b9593cd69c0a46a28b11926563583fafe69f8f7a1e5c6634551d8ab15690c8e9"
+    },
+    {
+      "path": "checkpoints\\expB\\best.pt",
+      "sha256": "b9593cd69c0a46a28b11926563583fafe69f8f7a1e5c6634551d8ab15690c8e9"
+    },
+    {
+      "path": "logs\\expB\\completion_audit.json",
+      "sha256": "5a4978fc5b716ec6c77ec9f7eeba03264116e8fa9d9aed2a26f704453917b731"
+    },
+    {
+      "path": "logs\\expB\\completion_audit_console.log",
+      "sha256": "d93b8eecf4341f3dcbbed99cbd605a778a358768da726ff1b44f1a53c9071dba"
+    },
+    {
+      "path": "logs\\expB\\config.json",
+      "sha256": "44f905692ff012a944e5508b3172a212b39d3edb7e210260246cc3dc82fcf209"
+    },
+    {
+      "path": "logs\\expB\\console.log",
+      "sha256": "d796b8cd8ea25f79f9076d290208eafb7fe5d65d45af74c318575891d1c3f0bd"
+    },
+    {
+      "path": "logs\\expB\\metrics.csv",
+      "sha256": "3ab3c8267e4490cbc37f2ccd112723bdc09d733a8fad47d434137e7746a6c0c8"
+    },
+    {
+      "path": "logs\\expB\\RESULTS.md",
+      "sha256": "95fc7df1fdd9f2e750932a49ab2e47904c214c3edf77b11deda2b5a2fb06f6a5"
+    },
+    {
+      "path": "logs\\expB\\training_report.json",
+      "sha256": "3265acfc1bfcfabf128f689e0e34c891245ff1bbf5f537a6b6cea5dddcf1bd59"
+    }
+  ]
+}

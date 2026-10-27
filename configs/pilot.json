@@ -1,0 +1,15 @@
+{
+  "name": "pilot",
+  "seed": 42,
+  "train_manifest": "data_manifests/pilot/train.json",
+  "val_manifest": "data_manifests/pilot/val.json",
+  "batch_size": 2,
+  "learning_rate": 0.00001,
+  "weight_decay": 0.000006,
+  "gradient_clip": 1.0,
+  "max_steps": 4,
+  "validation_interval": 2,
+  "guided_attention_weight": 0.0,
+  "precision": "float32",
+  "prompt": "Hello. This is our first speech synthesis test for Assignment Three."
+}

@@ -1,6 +1,12 @@
 __pycache__/
 .ipynb_checkpoints/
 .venv/
+checkpoints/
+models/
+LJSpeech-1.1/
 *.pt
+*.pth
 *.ckpt
-*.wav
+*.tar
+*.bz2
+*.zip

@@ -1,0 +1,14 @@
+{
+  "id": "human_1k_vs_2k_no_clear_gain_20261028",
+  "date_recorded": "2026-10-28",
+  "source": "user manual listening in this conversation",
+  "comparison": "comparisons/training_1k_vs_2k/listen.html",
+  "user_statement": "人工试听后，发现并没有明显进步，有些地方反而有退化。",
+  "judgment": "No obvious overall improvement from 1k to 2k; some passages regressed.",
+  "scope": "Overall feedback on the 1k/2k comparison; specific sample/model locations were not provided.",
+  "numeric_score": null,
+  "sample_ids": null,
+  "per_model_scores": null,
+  "independent_rater_count": 1,
+  "limitations": "Do not interpret as three independent raters or as every model/sample regressing."
+}

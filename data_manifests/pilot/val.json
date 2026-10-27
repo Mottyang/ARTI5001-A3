@@ -1,0 +1,50 @@
+[
+  {
+    "id": "LJ024-0072",
+    "wav": "LJSpeech-1.1/wavs/LJ024-0072.wav",
+    "label": "a new and younger judge shall be added to the court automatically.",
+    "duration": 4.790430839002267
+  },
+  {
+    "id": "LJ009-0301",
+    "wav": "LJSpeech-1.1/wavs/LJ009-0301.wav",
+    "label": "who deserted, and was pursued, but without success.",
+    "duration": 3.455283446712018
+  },
+  {
+    "id": "LJ008-0285",
+    "wav": "LJSpeech-1.1/wavs/LJ008-0285.wav",
+    "label": "on the one hand the gallows, on the other a short imprisonment.",
+    "duration": 4.372471655328798
+  },
+  {
+    "id": "LJ003-0339",
+    "wav": "LJSpeech-1.1/wavs/LJ003-0339.wav",
+    "label": "could possibly afford.",
+    "duration": 1.4583673469387755
+  },
+  {
+    "id": "LJ032-0223",
+    "wav": "LJSpeech-1.1/wavs/LJ032-0223.wav",
+    "label": "and that Oswald's face had not been superimposed on another body.",
+    "duration": 3.4436734693877553
+  },
+  {
+    "id": "LJ046-0118",
+    "wav": "LJSpeech-1.1/wavs/LJ046-0118.wav",
+    "label": "In addition to this function, PRS is responsible for such tasks",
+    "duration": 4.709160997732426
+  },
+  {
+    "id": "LJ037-0002",
+    "wav": "LJSpeech-1.1/wavs/LJ037-0002.wav",
+    "label": "Chapter four. The Assassin: Part six.",
+    "duration": 3.1766439909297053
+  },
+  {
+    "id": "LJ035-0024",
+    "wav": "LJSpeech-1.1/wavs/LJ035-0024.wav",
+    "label": "and this man, Mr. Truly, spoke up and says, it seems to me like he says,",
+    "duration": 4.9878004535147396
+  }
+]

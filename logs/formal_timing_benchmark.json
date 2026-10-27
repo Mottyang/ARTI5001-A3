@@ -1,0 +1,202 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "torch": "2.11.0+cu128",
+  "batch_size": 4,
+  "model_load_seconds": 0.8794406000524759,
+  "training_updates_measured": 14,
+  "warmup_updates_excluded": 2,
+  "validation_batches_measured": 12,
+  "train_mean_compute_seconds": 1.167157541650037,
+  "train_mean_cold_data_seconds": 0.01063733322856327,
+  "val_mean_compute_seconds": 0.37129659997299314,
+  "val_mean_cold_data_seconds": 0.009322491707280278,
+  "validation_batches_full_pass": 328,
+  "validation_passes_per_run": 5,
+  "estimated_per_experiment_minutes": 29.755664168334466,
+  "planning_per_experiment_minutes_range": [
+    22.31674812625085,
+    49.609062669335145
+  ],
+  "planning_both_experiments_minutes_range": [
+    44.6334962525017,
+    99.21812533867029
+  ],
+  "peak_allocated_gpu_mib": 1304.37890625,
+  "peak_reserved_gpu_mib": 1466.0,
+  "training_batches": [
+    {
+      "step": 1,
+      "data_seconds": 0.015656299889087677,
+      "compute_seconds": 1.6446767002344131,
+      "total_seconds": 1.6603330001235008,
+      "max_audio_seconds": 9.945260770975057
+    },
+    {
+      "step": 2,
+      "data_seconds": 0.011202899739146233,
+      "compute_seconds": 1.0373825998976827,
+      "total_seconds": 1.048585499636829,
+      "max_audio_seconds": 8.08766439909297
+    },
+    {
+      "step": 3,
+      "data_seconds": 0.008833499625325203,
+      "compute_seconds": 1.3083714004606009,
+      "total_seconds": 1.317204900085926,
+      "max_audio_seconds": 9.840770975056689
+    },
+    {
+      "step": 4,
+      "data_seconds": 0.009144499897956848,
+      "compute_seconds": 1.3217254998162389,
+      "total_seconds": 1.3308699997141957,
+      "max_audio_seconds": 9.620181405895691
+    },
+    {
+      "step": 5,
+      "data_seconds": 0.011007600463926792,
+      "compute_seconds": 1.3385683996602893,
+      "total_seconds": 1.349576000124216,
+      "max_audio_seconds": 9.608571428571429
+    },
+    {
+      "step": 6,
+      "data_seconds": 0.009623599238693714,
+      "compute_seconds": 1.239750999957323,
+      "total_seconds": 1.2493745991960168,
+      "max_audio_seconds": 9.2718820861678
+    },
+    {
+      "step": 7,
+      "data_seconds": 0.008419599384069443,
+      "compute_seconds": 1.0123529005795717,
+      "total_seconds": 1.0207724999636412,
+      "max_audio_seconds": 7.623265306122449
+    },
+    {
+      "step": 8,
+      "data_seconds": 0.007800099439918995,
+      "compute_seconds": 1.163807200267911,
+      "total_seconds": 1.17160729970783,
+      "max_audio_seconds": 8.644943310657597
+    },
+    {
+      "step": 9,
+      "data_seconds": 0.01232920028269291,
+      "compute_seconds": 1.0002776999026537,
+      "total_seconds": 1.0126069001853466,
+      "max_audio_seconds": 7.518775510204081
+    },
+    {
+      "step": 10,
+      "data_seconds": 0.007701199501752853,
+      "compute_seconds": 0.9501873003318906,
+      "total_seconds": 0.9578884998336434,
+      "max_audio_seconds": 7.042766439909297
+    },
+    {
+      "step": 11,
+      "data_seconds": 0.01080160029232502,
+      "compute_seconds": 1.1012489991262555,
+      "total_seconds": 1.1120505994185805,
+      "max_audio_seconds": 8.261814058956917
+    },
+    {
+      "step": 12,
+      "data_seconds": 0.01410720031708479,
+      "compute_seconds": 1.049469799734652,
+      "total_seconds": 1.0635770000517368,
+      "max_audio_seconds": 7.925124716553288
+    },
+    {
+      "step": 13,
+      "data_seconds": 0.012393400073051453,
+      "compute_seconds": 1.3212059000506997,
+      "total_seconds": 1.3335993001237512,
+      "max_audio_seconds": 10.096190476190475
+    },
+    {
+      "step": 14,
+      "data_seconds": 0.015486500225961208,
+      "compute_seconds": 1.1989243999123573,
+      "total_seconds": 1.2144109001383185,
+      "max_audio_seconds": 8.911972789115646
+    }
+  ],
+  "validation_batches": [
+    {
+      "count": 4,
+      "data_seconds": 0.008455700241029263,
+      "compute_seconds": 0.3889290001243353,
+      "total_seconds": 0.39738470036536455
+    },
+    {
+      "count": 4,
+      "data_seconds": 0.010902299545705318,
+      "compute_seconds": 0.3800533004105091,
+      "total_seconds": 0.39095559995621443
+    },
+    {
+      "count": 4,
+      "data_seconds": 0.009529000148177147,
+      "compute_seconds": 0.3498599994927645,
+      "total_seconds": 0.3593889996409416
+    },
+    {
+      "count": 4,
+      "data_seconds": 0.01120080053806305,
+      "compute_seconds": 0.36563050001859665,
+      "total_seconds": 0.3768313005566597
+    },
+    {
+      "count": 4,
+      "data_seconds": 0.009758800268173218,
+      "compute_seconds": 0.3556690998375416,
+      "total_seconds": 0.3654279001057148
+    },
+    {
+      "count": 4,
+      "data_seconds": 0.010397600010037422,
+      "compute_seconds": 0.42218609992414713,
+      "total_seconds": 0.43258369993418455
+    },
+    {
+      "count": 4,
+      "data_seconds": 0.008195900358259678,
+      "compute_seconds": 0.3655791003257036,
+      "total_seconds": 0.3737750006839633
+    },
+    {
+      "count": 4,
+      "data_seconds": 0.009064499288797379,
+      "compute_seconds": 0.36183170042932034,
+      "total_seconds": 0.3708961997181177
+    },
+    {
+      "count": 4,
+      "data_seconds": 0.009632299654185772,
+      "compute_seconds": 0.4149906998500228,
+      "total_seconds": 0.42462299950420856
+    },
+    {
+      "count": 4,
+      "data_seconds": 0.009130999445915222,
+      "compute_seconds": 0.33669620007276535,
+      "total_seconds": 0.3458271995186806
+    },
+    {
+      "count": 4,
+      "data_seconds": 0.009836300276219845,
+      "compute_seconds": 0.3199175000190735,
+      "total_seconds": 0.32975380029529333
+    },
+    {
+      "count": 2,
+      "data_seconds": 0.005765700712800026,
+      "compute_seconds": 0.3942159991711378,
+      "total_seconds": 0.39998169988393784
+    }
+  ],
+  "scope": "Timing only; original weights unchanged on disk; no expA/expB checkpoints. No test inference. Estimate includes five validation passes and approximate feature caching cost; allowance for checkpoint I/O, duration mix, system load.",
+  "caveat": "Small timing sample; does not guarantee throughput or final model quality."
+}

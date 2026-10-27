@@ -1,0 +1,2 @@
+﻿id,date_recorded,source,comparison,user_statement,judgment,scope,numeric_score,sample_ids,per_model_scores,independent_rater_count,limitations
+human_1k_vs_2k_no_clear_gain_20261028,2026-10-28,user manual listening in this conversation,comparisons/training_1k_vs_2k/listen.html,人工试听后，发现并没有明显进步，有些地方反而有退化。,No obvious overall improvement from 1k to 2k; some passages regressed.,Overall feedback on the 1k/2k comparison; specific sample/model locations were not provided.,,,,1,Do not interpret as three independent raters or as every model/sample regressing.

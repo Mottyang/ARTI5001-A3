@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-28",
+  "training_decision": "Stop additional training at user request after 2k comparison",
+  "feedback": {
+    "id": "human_1k_vs_2k_no_clear_gain_20261028",
+    "date_recorded": "2026-10-28",
+    "source": "user manual listening in this conversation",
+    "comparison": "comparisons/training_1k_vs_2k/listen.html",
+    "user_statement": "人工试听后，发现并没有明显进步，有些地方反而有退化。",
+    "judgment": "No obvious overall improvement from 1k to 2k; some passages regressed.",
+    "scope": "Overall feedback on the 1k/2k comparison; specific sample/model locations were not provided.",
+    "numeric_score": null,
+    "sample_ids": null,
+    "per_model_scores": null,
+    "independent_rater_count": 1,
+    "limitations": "Do not interpret as three independent raters or as every model/sample regressing."
+  },
+  "endpoint_comparison": [
+    {
+      "experiment": "expA",
+      "learning_rate": 1e-05,
+      "endpoint_steps": 1000,
+      "validation_loss": 0.37390230925938556,
+      "reference_word_errors": 7,
+      "reference_word_count": 148,
+      "reference_wer": 0.0472972972972973,
+      "custom_word_errors": 7,
+      "custom_word_count": 120,
+      "custom_wer": 0.058333333333333334,
+      "reference_latency_seconds": 0.3287128667657574,
+      "reference_rtf": 0.061483091681807746,
+      "custom_latency_seconds": 0.29813205323492487,
+      "custom_rtf": 0.06213150796400627
+    },
+    {
+      "experiment": "expA",
+      "learning_rate": 1e-05,
+      "endpoint_steps": 2000,
+      "validation_loss": 0.37342685797742303,
+      "reference_word_errors": 7,
+      "reference_word_count": 148,
+      "reference_wer": 0.0472972972972973,
+      "custom_word_errors": 6,
+      "custom_word_count": 120,
+      "custom_wer": 0.05,
+      "reference_latency_seconds": 0.2929291732298831,
+      "reference_rtf": 0.05601868018114906,
+      "custom_latency_seconds": 0.3081002267077565,
+      "custom_rtf": 0.06442714022390553
+    },
+    {
+      "experiment": "expB",
+      "learning_rate": 5e-05,
+      "endpoint_steps": 1000,
+      "validation_loss": 0.3837281758548649,
+      "reference_word_errors": 7,
+      "reference_word_count": 148,
+      "reference_wer": 0.0472972972972973,
+      "custom_word_errors": 6,
+      "custom_word_count": 120,
+      "custom_wer": 0.05,
+      "reference_latency_seconds": 0.3416875566355884,
+      "reference_rtf": 0.06413273098556606,
+      "custom_latency_seconds": 0.32735714334994553,
+      "custom_rtf": 0.06909137821292939
+    },
+    {
+      "experiment": "expB",
+      "learning_rate": 5e-05,
+      "endpoint_steps": 2000,
+      "validation_loss": 0.38728906949057834,
+      "reference_word_errors": 8,
+      "reference_word_count": 148,
+      "reference_wer": 0.05405405405405406,
+      "custom_word_errors": 7,
+      "custom_word_count": 120,
+      "custom_wer": 0.058333333333333334,
+      "reference_latency_seconds": 0.2956031898967922,
+      "reference_rtf": 0.05822349446554379,
+      "custom_latency_seconds": 0.316093433337907,
+      "custom_rtf": 0.06422745087561971
+    }
+  ],
+  "best_within_2k": {
+    "expA": {
+      "step": 1750,
+      "loss": 0.37276010467805937
+    },
+    "expB": {
+      "step": 1000,
+      "loss": 0.3837281758548649
+    }
+  },
+  "checkpoint_preservation": [
+    {
+      "path": "checkpoints/expA/best.pt",
+      "bytes": 338429150,
+      "sha256": "e1fb21d01b489a075a98247acd482e9fca82522748d3aa2c0b76a55df9cd3082"
+    },
+    {
+      "path": "checkpoints/expA/last.pt",
+      "bytes": 338429150,
+      "sha256": "e1fb21d01b489a075a98247acd482e9fca82522748d3aa2c0b76a55df9cd3082"
+    },
+    {
+      "path": "checkpoints/expA/stage_2k/best.pt",
+      "bytes": 338429150,
+      "sha256": "60a3e8422f406de75e407c67841af177bc2f16bafdb2adceccde381d1f3b509a"
+    },
+    {
+      "path": "checkpoints/expA/stage_2k/last.pt",
+      "bytes": 338429150,
+      "sha256": "168e8936d68c6da2b4e4781376484e09d93e204d13fc5c537c4432cc868084a2"
+    },
+    {
+      "path": "checkpoints/expB/best.pt",
+      "bytes": 338429150,
+      "sha256": "b9593cd69c0a46a28b11926563583fafe69f8f7a1e5c6634551d8ab15690c8e9"
+    },
+    {
+      "path": "checkpoints/expB/last.pt",
+      "bytes": 338429150,
+      "sha256": "b9593cd69c0a46a28b11926563583fafe69f8f7a1e5c6634551d8ab15690c8e9"
+    },
+    {
+      "path": "checkpoints/expB/stage_2k/best.pt",
+      "bytes": 338429150,
+      "sha256": "b9593cd69c0a46a28b11926563583fafe69f8f7a1e5c6634551d8ab15690c8e9"
+    },
+    {
+      "path": "checkpoints/expB/stage_2k/last.pt",
+      "bytes": 338429150,
+      "sha256": "bdb3919ce5ffde6525b04bd9bd2a36ad9aad63008c1a543bc387eac927a8c8c2"
+    }
+  ],
+  "source_logs_sha256": {
+    "logs/expA/metrics.csv": "0bca5dd189ef4aac25dc49e6ad43f31f6149131baf87ab2b14add5e62eae068a",
+    "logs/expA/stage_2k/metrics.csv": "d004d3501db38a9306bc48ddcdb3b60286b028bc33fd5990d7b550f48a7a9819",
+    "logs/expB/metrics.csv": "3ab3c8267e4490cbc37f2ccd112723bdc09d733a8fad47d434137e7746a6c0c8",
+    "logs/expB/stage_2k/metrics.csv": "2430939f247b56cd25acbd9b7a16ef39ae2aee354095562a36e5c8ed0d00711c"
+  },
+  "source_comparison_sha256": "5a006c16b3a69226e626a80b253c0deb48fa6ff860ec6df34349881a892e50e0",
+  "figure_notes": "Raw batch losses plus trailing 50-step mean. Full validation panel includes step0; zoom panel explicitly clips y to .370-.390.",
+  "no_new_training_or_audio_generation": true,
+  "human_scores_invented": false
+}

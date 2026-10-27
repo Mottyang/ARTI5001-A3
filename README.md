@@ -22,8 +22,20 @@
 
 ![训练与验证曲线](results/training_curves.png)
 
-## 分享范围与待办
+## 代码、Notebook 与试听
 
-这是工作日志仓库，不是完整可执行项目。未上传数据集、模型权重、检查点、运行环境、音频与 Notebook 提交包；日志中提及的本地项目文件需另行向组内共享。最终结果文档末尾的文件清单也包含本地归档文件，未必全部收录于本仓库。
+- [完整 Notebook](submission/62_A3/62_A3.ipynb)：已保存执行结果；默认关闭重新训练、新推理和 ASR。
+- [训练和推理代码](scripts/)、[实验配置](configs/)、[固定划分](splits/)、[数据清单](data_manifests/)、[原始训练日志](logs/)。
+- [试听页面文件](submission/62_A3/listen.html)、[110 段配套音频](submission/62_A3/wav_examples/)、[Notebook 证据 JSON](submission/62_A3/data/experiment_evidence.json)。
+- [实验说明](EXPERIMENTS.md)、[微调说明](FINETUNING.md)、[环境依赖](requirements-lock.txt)。
+
+### 如何查看与试听
+
+1. 在线点击 Notebook 查看保存的文字、表格和图；GitHub 对大型 Notebook 或内嵌音频的显示可能受限。
+2. 点击仓库 **Code → Download ZIP**，完整解压。
+3. 用浏览器打开 `submission/62_A3/listen.html`，可并排试听 20 条句子的 110 段频谱重建及合成结果。GitHub 的 HTML 文件页只显示源码。
+4. 用 Jupyter 打开 `submission/62_A3/62_A3.ipynb`，保留旁边的 `data/` 和 `wav_examples/`；默认 Run All 读取既有结果，不会训练。需要自行安装 Python 依赖。
+
+没有上传原始 LJSpeech 数据集（包括真实录音）、模型权重、检查点和运行环境。训练、重新生成音频或数据完整性检查需要另外准备数据/权重；历史日志内的本机路径只是来源记录。旧诊断页面未全部上传，工作日志中相关路径可能指向本地归档。
 
 现有 Notebook 已通过默认从头运行验证，没有重新训练。提交前仍需组员核对成员信息、分工与 AI 使用声明，并完成 PDF 报告和展示 PPT。尚未进行独立最终测试集评估；现有 10 条真实参照来自验证集。

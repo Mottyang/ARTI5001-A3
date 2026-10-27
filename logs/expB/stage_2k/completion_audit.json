@@ -1,0 +1,66 @@
+{
+  "completed_additional_updates": 1000,
+  "end_step": 2000,
+  "all_metrics_finite": true,
+  "validation": [
+    {
+      "step": 250,
+      "loss": 0.3875938098849231
+    },
+    {
+      "step": 500,
+      "loss": 0.3876130925335047
+    },
+    {
+      "step": 750,
+      "loss": 0.38523106565912263
+    },
+    {
+      "step": 1000,
+      "loss": 0.3837281758548649
+    },
+    {
+      "step": 1250,
+      "loss": 0.3873287342431891
+    },
+    {
+      "step": 1500,
+      "loss": 0.3878248143287105
+    },
+    {
+      "step": 1750,
+      "loss": 0.3855682302522295
+    },
+    {
+      "step": 2000,
+      "loss": 0.38728906949057834
+    }
+  ],
+  "best_step_within_2k": 1000,
+  "best_loss_within_2k": 0.3837281758548649,
+  "loss_at_exact_2k": 0.38728906949057834,
+  "last_sha256": "bdb3919ce5ffde6525b04bd9bd2a36ad9aad63008c1a543bc387eac927a8c8c2",
+  "best_sha256": "b9593cd69c0a46a28b11926563583fafe69f8f7a1e5c6634551d8ab15690c8e9",
+  "last_and_best_strict_reload_tensor_equality": true,
+  "continuation_report": {
+    "status": "training_checkpoint_saved",
+    "start_step": 1000,
+    "end_step": 2000,
+    "resumed_optimizer": true,
+    "embedding_max_abs_change": 0.005407446064054966,
+    "initial_validation_loss": 0.3837496881721584,
+    "final_validation_loss": 0.38728906949057834,
+    "peak_gpu_memory_mib": 1348.69482421875,
+    "seconds": 1836.588144400157,
+    "device": "NVIDIA GeForce RTX 5070 Ti",
+    "python": "3.10.11",
+    "torch": "2.11.0+cu128",
+    "checkpoint": "C:\\Users\\Admin\\Desktop\\Assignment\\5001\\a3\\checkpoints\\expB\\stage_2k\\last.pt",
+    "manifest_hashes": {
+      "train_manifest": "1ed16c50720bc67088c0bc6776fbff13ef6fa97c81b4be9d20631d92ae6d3eec",
+      "val_manifest": "c2774bca34624d5fb9f17b67a275c4092481952184c905c0bbace69d7ad54a11"
+    },
+    "warning": "Pilot functional test only; short-utterance subset and very few updates. No claim of quality improvement."
+  },
+  "scope_clarification": "Formal continuation 1000 to 2000, unchanged training settings. Inherited pilot warning is not the actual scope. Original 1k files unchanged."
+}

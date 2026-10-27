@@ -1,0 +1,31 @@
+{
+  "dataset": "LJSpeech-1.1",
+  "dataset_root_at_creation": "C:\\Users\\Admin\\Desktop\\Assignment\\5001\\a3\\LJSpeech-1.1",
+  "metadata_sha256": "852bce5c79e5184ba5bf2ea98aad4bcf49a5d787def5fd1f04fa2ab8aa6dc535",
+  "seed": 42,
+  "ratios": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "algorithm": "Sort utterance IDs lexicographically, shuffle using Python random.Random(42), then slice 80/10/10; saved manifests are authoritative.",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "counts": {
+    "train": 10480,
+    "val": 1310,
+    "test": 1310
+  },
+  "checks": {
+    "disjoint": true,
+    "complete_coverage": true,
+    "all_audio_paths_exist": true
+  },
+  "files_sha256": {
+    "test_ids.txt": "f84fc24db45c78de9511a14be47994cc3432925bf0d98ff271137bf87f25c299",
+    "test_metadata.csv": "df8e2e3c74308326a11015f75ad0799cae3dcdedb90060acad552d6f496d0ef7",
+    "train_ids.txt": "de7af02a023ede4d3f362e09ae7b32c9ab787c40538c9a675f9ea8a943da1441",
+    "train_metadata.csv": "4b5b666176a6ce2b039658e48e729a481fcb43476dcc161c050205c8c0712a53",
+    "val_ids.txt": "d97c6a796ef70775a70f71d0b4011aac698e558e766c739360433d1c1e09938e",
+    "val_metadata.csv": "70ca412295a27e876448f87c292532eb5aa8246355943ee0a21f59a450e971af"
+  }
+}

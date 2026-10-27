@@ -1,0 +1,15 @@
+{
+  "checkpoint": "C:\\Users\\Admin\\Desktop\\Assignment\\5001\\a3\\checkpoints\\pilot\\last.pt",
+  "checkpoint_sha256": "95f07afb827fbfd2f05b34d44446d96869870fe304ef5a049a57cbdf3412ea00",
+  "step": 5,
+  "all_model_tensors_match_checkpoint": true,
+  "optimizer_state_loaded": true,
+  "fresh_process": true,
+  "wav": "C:\\Users\\Admin\\Desktop\\Assignment\\5001\\a3\\wav_examples\\pilot_reloaded_step5.wav",
+  "seconds": 5.12,
+  "sample_rate": 22050,
+  "peak": 0.5240240097045898,
+  "finite_nonzero_audio": true,
+  "tts_device": "cuda:0",
+  "vocoder_device": "cuda:0"
+}

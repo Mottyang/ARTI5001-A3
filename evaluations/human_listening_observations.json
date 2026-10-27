@@ -1,0 +1,57 @@
+{
+  "observations": [
+    {
+      "id": "human_UN_regression_20261027",
+      "date": "2026-10-27",
+      "source": "user manual listening",
+      "comparison": "dotted_initialisms_generic",
+      "case_id": "04",
+      "input": "The report mentions U.N.",
+      "expanded_input": "The report mentions you, en.",
+      "before_correct": true,
+      "after_correct": false,
+      "judgment": "regression",
+      "user_statement": "U.N.根据我的人工核实，处理前反而是对的，处理后就错了",
+      "model_scope": "Not specified by user; do not treat as three independent model ratings.",
+      "models_assessed": null,
+      "numeric_score": null,
+      "interpretation": "Human judgment contradicts treating ASR non-match as proof of incorrect pronunciation before expansion.",
+      "policy_response": "Default retain original abbreviations; numeric/money repair remains enabled; dotted expansion opt-in only.",
+      "text_encoding_note": "Original user statement restored from conversation; judgment unchanged."
+    },
+    {
+      "id": "human_overall_three_models_20261027",
+      "date_recorded": "2026-10-27",
+      "source": "user feedback in this conversation",
+      "scope": "30 generated utterances from 10 custom prompts and three models",
+      "user_statement": "认为这几个模型所生成的句子没有很明显的差异，并且质量都一般。",
+      "judgment": "No obvious model differences; perceived quality generally mediocre.",
+      "numeric_score": null,
+      "independent_rater_count": 1
+    },
+    {
+      "id": "human_reconstruction_close_20261027",
+      "date_recorded": "2026-10-27",
+      "source": "user response to R02/R06/R10 listening question",
+      "scope": "Real-mel reconstruction versus real recordings, focusing on R02/R06/R10",
+      "user_statement": "比较接近，只是略有差别",
+      "judgment": "Reconstruction sounds close to original, with minor differences.",
+      "numeric_score": null,
+      "independent_rater_count": 1
+    },
+    {
+      "id": "human_1k_vs_2k_no_clear_gain_20261028",
+      "date_recorded": "2026-10-28",
+      "source": "user manual listening in this conversation",
+      "comparison": "comparisons/training_1k_vs_2k/listen.html",
+      "user_statement": "人工试听后，发现并没有明显进步，有些地方反而有退化。",
+      "judgment": "No obvious overall improvement from 1k to 2k; some passages regressed.",
+      "scope": "Overall feedback on the 1k/2k comparison; specific sample/model locations were not provided.",
+      "numeric_score": null,
+      "sample_ids": null,
+      "per_model_scores": null,
+      "independent_rater_count": 1,
+      "limitations": "Do not interpret as three independent raters or as every model/sample regressing."
+    }
+  ]
+}

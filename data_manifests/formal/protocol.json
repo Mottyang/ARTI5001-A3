@@ -1,0 +1,95 @@
+{
+  "selection": "First 2000 IDs in existing seed-42 shuffled train list; no duration filtering. All original validation/test IDs retained.",
+  "summaries": {
+    "train": {
+      "count": 2000,
+      "hours": 3.6855697656840554,
+      "mean_seconds": 6.6340255782312925,
+      "min_seconds": 1.1332879818594104,
+      "max_seconds": 10.096190476190475
+    },
+    "val": {
+      "count": 1310,
+      "hours": 2.3620866465104555,
+      "mean_seconds": 6.4912304789600315,
+      "min_seconds": 1.1332879818594104,
+      "max_seconds": 10.096190476190475
+    },
+    "test": {
+      "count": 1310,
+      "hours": 2.3732741496598657,
+      "mean_seconds": 6.521974762424054,
+      "min_seconds": 1.1332879818594104,
+      "max_seconds": 10.096190476190475
+    }
+  },
+  "shared_config": {
+    "seed": 42,
+    "train_manifest": "data_manifests/formal/train.json",
+    "val_manifest": "data_manifests/formal/val.json",
+    "batch_size": 4,
+    "weight_decay": 6e-06,
+    "gradient_clip": 1.0,
+    "max_steps": 1000,
+    "validation_interval": 250,
+    "guided_attention_weight": 0.0,
+    "precision": "float32",
+    "prompt": "Hello. This is our first speech synthesis test for Assignment Three."
+  },
+  "learning_rates": {
+    "expA": 1e-05,
+    "expB": 5e-05
+  },
+  "only_config_differences": [
+    "name",
+    "learning_rate"
+  ],
+  "epochs": 2,
+  "training_updates": 1000,
+  "validation_steps": [
+    0,
+    250,
+    500,
+    750,
+    1000
+  ],
+  "checkpoint_selection": "lowest validation loss among saved checkpoints at steps 250/500/750/1000",
+  "initialization": "Each run independently loads original models/tacotron2/model.ckpt; never pilot or benchmark weights.",
+  "hifigan": "Frozen and shared; not used in training loss.",
+  "mel": {
+    "sample_rate": 22050,
+    "hop_length": 256,
+    "win_length": 1024,
+    "n_fft": 1024,
+    "n_mels": 80,
+    "f_min": 0.0,
+    "f_max": 8000.0,
+    "power": 1,
+    "normalized": false,
+    "norm": "slaney",
+    "mel_scale": "slaney",
+    "compression": true
+  },
+  "test_policy": "Prepared only; not used by training, validation or timing benchmark.",
+  "limitations": [
+    "One training seed; no claim of multi-seed significance.",
+    "LJSpeech pretrained checkpoint may have seen test recordings.",
+    "Checkpoint selection uses stochastic-prenet teacher-forced validation loss; quality needs separate fixed-prompt evaluation."
+  ],
+  "sha256": {
+    "LJSpeech-1.1/metadata.csv": "852bce5c79e5184ba5bf2ea98aad4bcf49a5d787def5fd1f04fa2ab8aa6dc535",
+    "models/tacotron2/model.ckpt": "02d1aa3fc1cc8fb0981895c765e9d0017416bb78861b5450e458dda92e567856",
+    "models/hifigan/generator.ckpt": "1a389f24ffdc3769e0b9c0331f9d803ad0b78185e0da4f2d094e29eedbc11640",
+    "models/tacotron2/hyperparams.yaml": "f2b1bcc174401962fa6eb7b34f24021b96209f5ce94def06f32588c6ecd85e43",
+    "scripts/train_tacotron2.py": "6cb8f0e6a12a52821545fde70f7802fe9c2edba79e0eac2dee0799f8a17dd0ec",
+    "scripts/tts_training_common.py": "8b26dd82c0ef1cc5475698e78a3f96b992c76677027f3ef441b2b59c712251d9",
+    "splits/train_ids.txt": "de7af02a023ede4d3f362e09ae7b32c9ab787c40538c9a675f9ea8a943da1441",
+    "splits/val_ids.txt": "d97c6a796ef70775a70f71d0b4011aac698e558e766c739360433d1c1e09938e",
+    "splits/test_ids.txt": "f84fc24db45c78de9511a14be47994cc3432925bf0d98ff271137bf87f25c299",
+    "data_manifests/formal/train.json": "1ed16c50720bc67088c0bc6776fbff13ef6fa97c81b4be9d20631d92ae6d3eec",
+    "data_manifests/formal/val.json": "c2774bca34624d5fb9f17b67a275c4092481952184c905c0bbace69d7ad54a11",
+    "data_manifests/formal/test.json": "9b886caa5f326a2640899c1689bffa3c66555a526209d8a0694d1f7915ee1fa9",
+    "configs/expA.json": "5171bc4dfc969110266d58068a4a2cc5131e90fd47af35de270236fd3b7d0fc3",
+    "configs/expB.json": "44f905692ff012a944e5508b3172a212b39d3edb7e210260246cc3dc82fcf209"
+  }
+}

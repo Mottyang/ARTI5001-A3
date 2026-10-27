@@ -1,0 +1,61 @@
+{
+  "counts": {
+    "train": 32,
+    "val": 8
+  },
+  "selection": "first eligible IDs in fixed split order; duration 1-5 seconds",
+  "text_column": "normalized text (third pipe-delimited column), then english_cleaners",
+  "audio": "float32 PCM; no resampling, trimming or peak normalization",
+  "mel_parameters": {
+    "sample_rate": 22050,
+    "hop_length": 256,
+    "win_length": 1024,
+    "n_fft": 1024,
+    "n_mels": 80,
+    "f_min": 0.0,
+    "f_max": 8000.0,
+    "power": 1,
+    "normalized": false,
+    "norm": "slaney",
+    "mel_scale": "slaney",
+    "compression": true
+  },
+  "architecture_keys_verified": [
+    "n_mel_channels",
+    "n_symbols",
+    "symbols_embedding_dim",
+    "encoder_kernel_size",
+    "encoder_n_convolutions",
+    "encoder_embedding_dim",
+    "attention_rnn_dim",
+    "attention_dim",
+    "attention_location_n_filters",
+    "attention_location_kernel_size",
+    "n_frames_per_step",
+    "decoder_rnn_dim",
+    "prenet_dim",
+    "max_decoder_steps",
+    "gate_threshold",
+    "p_attention_dropout",
+    "p_decoder_dropout",
+    "postnet_embedding_dim",
+    "postnet_kernel_size",
+    "postnet_n_convolutions",
+    "decoder_no_early_stopping",
+    "mask_padding"
+  ],
+  "all_architecture_values_match": true,
+  "source_url": "https://github.com/speechbrain/speechbrain/blob/v1.0.3/recipes/LJSpeech/TTS/tacotron2/hparams/train.yaml",
+  "limitation": "Version-matched official recipe and model architecture verified; historical pretraining settings cannot be proven solely from inference config. LJSpeech pretrained/test overlap exists.",
+  "test_used": false,
+  "sha256": {
+    "LJSpeech-1.1\\metadata.csv": "852bce5c79e5184ba5bf2ea98aad4bcf49a5d787def5fd1f04fa2ab8aa6dc535",
+    "reference\\speechbrain-v1.0.3\\train.yaml": "9ec6d40569261d2bf020f691cdb44cef17078cd2fc1f6207545b2c9b87967e81",
+    "models\\tacotron2\\hyperparams.yaml": "f2b1bcc174401962fa6eb7b34f24021b96209f5ce94def06f32588c6ecd85e43",
+    "models\\tacotron2\\model.ckpt": "02d1aa3fc1cc8fb0981895c765e9d0017416bb78861b5450e458dda92e567856",
+    "splits\\train_ids.txt": "de7af02a023ede4d3f362e09ae7b32c9ab787c40538c9a675f9ea8a943da1441",
+    "splits\\val_ids.txt": "d97c6a796ef70775a70f71d0b4011aac698e558e766c739360433d1c1e09938e",
+    "data_manifests\\pilot\\train.json": "042b20a0f476fc279585ad9ad38b57d8ffe42ccceb4b49ba9899beb6fe90eaf8",
+    "data_manifests\\pilot\\val.json": "96240f00fe37a41e903061721ff2f3595f9020acabb1072576d7773871e90d3d"
+  }
+}
