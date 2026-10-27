@@ -22,6 +22,10 @@
 
 ![训练与验证曲线](results/training_curves.png)
 
+## 在线试听
+
+[直接打开试听页面](https://mottyang.github.io/ARTI5001-A3/)（110 段音频，无需下载仓库）。
+
 ## 代码、Notebook 与试听
 
 - [完整 Notebook](submission/62_A3/62_A3.ipynb)：已保存执行结果；默认关闭重新训练、新推理和 ASR。
